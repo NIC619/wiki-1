@@ -216,6 +216,7 @@ To use a custom path run `$ parity --config path/to/config.toml`. Read more on [
 - Prefer [personal_sendTransaction](https://wiki.parity.io/JSONRPC-personal-module#personal_sendtransaction) over unlockAccount or the `--unlock` CLI flag to securely send transactions without leaving an account unlocked.
 - Do not use `all`/`0.0.0.0` for `--ws-interface`, `--ws-hosts`, `--ws-origins` and prefer a proper IP address/domain.
 - Do not use `all`/`0.0.0.0` for `--jsonrpc-interface`, `--jsonrpc-hosts`, `--jsonrpc-origins` and prefer a proper IP address/domain.
+- Do not use `*`/`all` for`--jsonrpc-cors`, `--ipfs-api-cors` and prefer a proper domain.
 - Do not use `--unsafe-expose` on a production server.
 - To access a server [SSH tunneling](Wallet-Remote-Access) is the way to go.
 - Regular users should not use `--unlock`.
