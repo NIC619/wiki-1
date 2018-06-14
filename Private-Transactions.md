@@ -27,6 +27,14 @@ In the below example: Nodes A and C have access to the contract's key. Node B do
 
 ![private-transactions-solution](images/private-transactions-solution.png)
 
+So in general in private transactoins system the following user (account) roles can be specified:
+
+| Role                                                       | Can view private contract's data and code | Can modify private contract data |
+|------------------------------------------------------------|-------------------------------------------|----------------------------------|
+| Regular account (without access to private contract's key) | No                                        | No                               |
+| Account with access to private contract's key              | Yes                                       | Yes                              |
+| Account, specified in system as Validator                  | Yes                                       | Yes                              |
+
 ### Flow description
 We use a trivial private contract as example:
 `contract Test1 { 
